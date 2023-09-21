@@ -3,8 +3,8 @@ const setupDriver = require('../helpers/setupDriver')
 const LoginPage = require('../pageobjects/LoginPage')
 
 describe('test login form', function () {
-	let driver
-	let loginPage
+	/** @type {Promise<WebdriverIO.Browser>} */ let driver
+	/** @type {LoginPage} */ let loginPage
 
 	before(async function () {
 		driver = await setupDriver()
